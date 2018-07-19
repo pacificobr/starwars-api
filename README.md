@@ -1,6 +1,6 @@
 # starwars-api
 
-###Made with JAVA + MongoDB
+### Made with JAVA + MongoDB
 
 ### Run with 
 `$ mvn spring-boot:run`
