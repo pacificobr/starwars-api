@@ -1,5 +1,6 @@
 package br.com.jonathaspacifico.starwarsapi.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -16,6 +17,8 @@ public class Planet implements Identifiable {
     private String name;
     private String climate;
     private String terrain;
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private int appearsOnFilmsCount;
 
     public String getId() {
         return id;
@@ -48,6 +51,14 @@ public class Planet implements Identifiable {
 
     public void setTerrain(String terrain) {
         this.terrain = terrain;
+    }
+
+    public int getAppearsOnFilmsCount() {
+        return appearsOnFilmsCount;
+    }
+
+    public void setAppearsOnFilmsCount(int appearsOnFilmsCount) {
+        this.appearsOnFilmsCount = appearsOnFilmsCount;
     }
 
     @Override

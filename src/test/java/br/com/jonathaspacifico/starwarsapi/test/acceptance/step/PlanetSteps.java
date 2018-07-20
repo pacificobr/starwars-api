@@ -15,7 +15,7 @@ import org.junit.Assert;
  */
 public class PlanetSteps extends AbstractSteps {
 
-    private static final String TEST_PLANET = "{\"name\": \"Foo 2\",\"terrain\": \"bar 2\" , \"climate\": \"Moderate\"}";
+    private static final String TEST_PLANET = "{ \"name\" : \"Tatooine\", \"terrain\" : \"desert\" , \"climate\" : \"arid\" }";
     private static final TypeReference<Map<String, Object>> RESOURCE_TYPE = new TypeReference<Map<String, Object>>() {
     };
 
